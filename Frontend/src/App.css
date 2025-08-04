@@ -1,0 +1,347 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.page {
+  @apply w-full h-full bg-white shadow-xl rounded-lg overflow-hidden flex items-center justify-center;
+}
+
+
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html,
+body,
+#root,
+.wrapper {
+  max-width: 100%;
+width: 90%;
+margin: auto;
+
+  height: 100vh;
+  overflow: hidden;
+  background-color: white; 
+}
+
+.drawing-book {
+  width: 100vw !important;
+  height: 100vh !important;
+   margin: 0 !important;
+  padding: 0 !important;
+}
+
+.page {
+  width: 100vw;
+  height: 100vh;
+  background-color: white;
+  font-family: 'Segoe UI', sans-serif;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  font-size: 2rem;
+  padding: 2rem;
+  overflow: hidden;
+  border: none;
+  box-shadow: none;
+} 
+/* Slight page shadow or perspective */
+.wrapper {
+  perspective: 2000px;
+}
+/* SpiralBinding.css */
+.spiral-container {
+  position: absolute;
+  left: -40px;
+  top: 0;
+  bottom: 0;
+  width: 20px;
+  z-index: 10;
+  display: flex;
+  justify-content: center;
+  background: transparent;
+}
+
+
+.spiral {
+  width: 20px;
+  height: 100%;
+  background-image: url("data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMjAiIGhlaWdodD0iMTAwJSIgdmlld0JveD0iMCAwIDIwIDIwMCIgeG1sbnM9Imh0dHA6Ly93d3cudzMu");
+  background-repeat: repeat-y;
+  background-size: 20px 40px;
+}
+.perspective {
+  perspective: 1000px;
+}
+.transform-style {
+  transform-style: preserve-3d;
+}
+.backface-hidden {
+  backface-visibility: hidden;
+}
+.rotate-y-180 {
+  transform: rotateY(180deg);
+}
+/* Make all page flips smooth and realistic, including backward direction */
+
+/* ✅ Needed for realistic backward + forward page flipping */
+/* .drawing-book .page {
+  transform-style: preserve-3d;
+  backface-visibility: hidden;
+  perspective: 2000px;
+} */
+ .drawing-book .page {
+  transform-style: preserve-3d;
+  backface-visibility: hidden;
+  perspective: 2000px;
+}
+
+/* index.css or App.css */
+.perspective {
+  perspective: 1500px;
+}
+.backface-hidden {
+  backface-visibility: hidden;
+}
+.rotate-y-180 {
+  transform: rotateY(180deg);
+}
+.transform-style {
+  transform-style: preserve-3d;
+}
+.perspective {
+  perspective: 1500px;
+}
+.backface-hidden {
+  backface-visibility: hidden;
+  -webkit-backface-visibility: hidden;
+}
+.transform-style {
+  transform-style: preserve-3d;
+}
+.perspective {
+  perspective: 1500px;
+}
+
+.backface-hidden {
+  backface-visibility: hidden;
+  -webkit-backface-visibility: hidden;
+}
+
+.transform-style {
+  transform-style: preserve-3d;
+}
+/* index.css */
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* 3D Flip Support */
+.perspective {
+  perspective: 1000px;
+}
+.preserve-3d {
+  transform-style: preserve-3d;
+}
+.backface-hidden {
+  backface-visibility: hidden;
+}
+.rotate-y-180 {
+  transform: rotateY(180deg);
+}
+.spiral-binding {
+  position: absolute;
+  top: 5%;
+  left: 0;
+  width: 40px;
+  height: 90%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  z-index: 50;
+  pointer-events: none;
+}
+
+.hole-wrapper {
+  position: relative;
+  width: 20px;
+  height: 20px;
+}
+
+.hole {
+  width: 16px;
+  height: 16px;
+  border: 2px solid white;
+  border-radius: 50%;
+  background-color: transparent;
+  z-index: 10;
+}
+
+.wire {
+  position: absolute;
+  top: 50%;
+  left: 100%;
+  transform: translateY(-50%);
+  width: 10px;
+  height: 2px;
+  background-color: white;
+  border-radius: 2px;
+}
+.spiral-container {
+  position: absolute;
+  left: 0;
+  top: 5%;
+  height: 90%;
+  width: 40px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  z-index: 50;
+  pointer-events: none;
+}
+
+.spiral-ring {
+  position: relative;
+  width: 30px;
+  height: 24px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.hole {
+  width: 14px;
+  height: 14px;
+  border: 2px solid white;
+  border-radius: 50%;
+  background-color: transparent;
+  z-index: 10;
+}
+
+.curve {
+  position: absolute;
+  width: 30px;
+  height: 30px;
+  border: 2px solid white;
+  border-radius: 50%;
+  border-right: none;
+  border-top: none;
+  top: 0;
+  left: 6px;
+  transform: rotate(45deg);
+  z-index: 5;
+}
+.hole {
+  box-shadow: inset 0 1px 2px rgba(0, 0, 0, 0.2);
+}
+.page {
+  box-shadow: inset 10px 0 8px -8px rgba(0, 0, 0, 0.15);
+}
+.left-spine {
+  box-shadow: inset -10px 0 10px -10px rgba(0, 0, 0, 0.2);
+}
+/* background: linear-gradient(to right, #fcfcf6, #f7f7f2); */
+
+.app-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+}
+
+h1 {
+  font-size: 2rem;
+}
+
+@media (min-width: 768px) {
+  h1 {
+    font-size: 3rem;
+  }
+}
+button,
+input,
+textarea {
+  width: 100%;
+  max-width: 100%;
+  padding: 10px;
+  font-size: 1rem;
+}
+
+@media (min-width: 768px) {
+  button {
+    width: auto;
+    padding: 12px 24px;
+  }
+}
+/* Main responsive container */
+.app-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 16px;
+}
+
+/* Responsive typography */
+h1 {
+  font-size: 2rem;
+}
+
+p {
+  font-size: 1rem;
+  line-height: 1.6;
+}
+
+@media (min-width: 768px) {
+  h1 {
+    font-size: 3rem;
+  }
+
+  p {
+    font-size: 1.2rem;
+  }
+}
+
+/* Images */
+img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+}
+
+/* Responsive layout utility classes */
+.flex-row {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+@media (min-width: 768px) {
+  .flex-row {
+    flex-direction: row;
+  }
+}
+
+.half {
+  width: 100%;
+}
+
+@media (min-width: 768px) {
+  .half {
+    width: 50%;
+  }
+}
+
+/* Section spacing */
+.section {
+  padding: 40px 0;
+}
+
