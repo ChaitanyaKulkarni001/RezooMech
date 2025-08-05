@@ -1,13 +1,60 @@
+// src/App.jsx
 import React from "react";
+import {
+  BrowserRouter as Router,
+  Routes,
+  Route,
+  useNavigate,
+  useParams
+} from "react-router-dom";
 
-function App() {
+import Login from "./components/Login";
+import LoginForm from "./components/LoginForm";
+import RegisterForm from "./components/RegisterForm";
+
+function HomeWrapper() {
+  const navigate = useNavigate();
+
+  const handleLogin = (role) => {
+    navigate(`/login/${role}`);
+  };
+
+  const handleRegister = () => {
+    navigate("/register");
+  };
+
+  return <Login onLogin={handleLogin} onRegister={handleRegister} />;
+}
+
+function LoginFormWrapper() {
+  const { role } = useParams();
+  const navigate = useNavigate();
   return (
-    <div className="flex items-center justify-center min-h-screen bg-gradient-to-br from-gray-900 to-gray-800">
-      <h1 className="text-4xl font-bold text-white bg-black px-6 py-3 rounded-xl shadow-lg hover:bg-gray-900 transition-all duration-300">
-        Hello World
-      </h1>
-    </div>
+    <LoginForm
+      role={role}
+      onBack={() => navigate("/")}
+    />
   );
 }
 
-export default App;
+function RegisterFormWrapper() {
+  const navigate = useNavigate();
+  return <RegisterForm onBack={() => navigate("/")} />;
+}
+
+export default function App() {
+  return (
+    <Router>
+      <Routes>
+        {/* Home screen with “Companies” / “Developers” choices */}
+        <Route path="/" element={<HomeWrapper />} />
+
+        {/* Actual login form, role comes from URL param */}
+        <Route path="/login/:role" element={<LoginFormWrapper />} />
+
+        {/* Registration form */}
+        <Route path="/register" element={<RegisterFormWrapper />} />
+      </Routes>
+    </Router>
+  );
+}
