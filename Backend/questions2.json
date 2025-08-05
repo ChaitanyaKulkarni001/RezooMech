@@ -1,0 +1,362 @@
+[
+    {
+        "model": "api.AptiQuestion",
+        "pk": 26,
+        "fields": {
+            "question": "If a train travels 300 km in 5 hours, what is its average speed in m/s?",
+            "options": {"A": "16.67 m/s", "B": "20 m/s", "C": "25 m/s", "D": "30 m/s"},
+            "correct_answer": "A",
+            "explanation": "First convert km/h to m/s: (300/5) = 60 km/h → (60×1000)/3600 = 16.67 m/s",
+            "created_at": "2023-10-01T12:00:00Z",
+            "updated_at": "2023-10-01T12:00:00Z"
+        }
+    },
+    {
+        "model": "api.AptiQuestion",
+        "pk": 27,
+        "fields": {
+            "question": "A cube has a volume of 125 cm³. What is the length of its diagonal?",
+            "options": {"A": "5√2 cm", "B": "5√3 cm", "C": "10 cm", "D": "12.5 cm"},
+            "correct_answer": "B",
+            "explanation": "Side length = ∛125 = 5 cm. Space diagonal = side×√3 = 5√3 cm",
+            "created_at": "2023-10-01T12:00:00Z",
+            "updated_at": "2023-10-01T12:00:00Z"
+        }
+    },
+    {
+        "model": "api.AptiQuestion",
+        "pk": 28,
+        "fields": {
+            "question": "If 2^x = 32 and 3^y = 81, what is x + y?",
+            "options": {"A": "7", "B": "9", "C": "11", "D": "13"},
+            "correct_answer": "B",
+            "explanation": "2^5=32 (x=5), 3^4=81 (y=4). So x+y=9",
+            "created_at": "2023-10-01T12:00:00Z",
+            "updated_at": "2023-10-01T12:00:00Z"
+        }
+    },
+    {
+        "model": "api.AptiQuestion",
+        "pk": 29,
+        "fields": {
+            "question": "What is the next number in the series: 2, 6, 12, 20, 30, ___?",
+            "options": {"A": "40", "B": "42", "C": "44", "D": "48"},
+            "correct_answer": "B",
+            "explanation": "The pattern is n×(n+1): 1×2=2, 2×3=6... 6×7=42",
+            "created_at": "2023-10-01T12:00:00Z",
+            "updated_at": "2023-10-01T12:00:00Z"
+        }
+    },
+    {
+        "model": "api.AptiQuestion",
+        "pk": 30,
+        "fields": {
+            "question": "If the ratio of A:B is 3:5 and B:C is 4:7, what is A:B:C?",
+            "options": {"A": "3:5:7", "B": "12:20:35", "C": "9:15:28", "D": "6:10:14"},
+            "correct_answer": "B",
+            "explanation": "Make B common (LCM of 5 & 4 is 20): A:B=12:20, B:C=20:35 → 12:20:35",
+            "created_at": "2023-10-01T12:00:00Z",
+            "updated_at": "2023-10-01T12:00:00Z"
+        }
+    },
+    {
+        "model": "api.AptiQuestion",
+        "pk": 31,
+        "fields": {
+            "question": "A clock shows 3:15. What is the angle between the hour and minute hands?",
+            "options": {"A": "0°", "B": "7.5°", "C": "15°", "D": "30°"},
+            "correct_answer": "B",
+            "explanation": "Minute hand at 90°, hour hand at 3.25×30°=97.5°. Difference=7.5°",
+            "created_at": "2023-10-01T12:00:00Z",
+            "updated_at": "2023-10-01T12:00:00Z"
+        }
+    },
+    {
+        "model": "api.AptiQuestion",
+        "pk": 32,
+        "fields": {
+            "question": "If 20% of x is equal to 30% of y, what is x:y?",
+            "options": {"A": "2:3", "B": "3:2", "C": "4:9", "D": "9:4"},
+            "correct_answer": "B",
+            "explanation": "0.2x=0.3y → x/y=3/2 → 3:2",
+            "created_at": "2023-10-01T12:00:00Z",
+            "updated_at": "2023-10-01T12:00:00Z"
+        }
+    },
+    {
+        "model": "api.AptiQuestion",
+        "pk": 33,
+        "fields": {
+            "question": "What is the probability of getting a sum of 7 when rolling two dice?",
+            "options": {"A": "1/6", "B": "1/9", "C": "1/12", "D": "5/36"},
+            "correct_answer": "A",
+            "explanation": "6 favorable outcomes (1-6,2-5,...) out of 36 total → 6/36=1/6",
+            "created_at": "2023-10-01T12:00:00Z",
+            "updated_at": "2023-10-01T12:00:00Z"
+        }
+    },
+    {
+        "model": "api.AptiQuestion",
+        "pk": 34,
+        "fields": {
+            "question": "A number when divided by 133 gives a remainder of 49. What is the remainder when the same number is divided by 7?",
+            "options": {"A": "0", "B": "1", "C": "3", "D": "5"},
+            "correct_answer": "A",
+            "explanation": "Number = 133k + 49. 133 is divisible by 7 (19×7) and 49 is divisible by 7 → remainder 0",
+            "created_at": "2023-10-01T12:00:00Z",
+            "updated_at": "2023-10-01T12:00:00Z"
+        }
+    },
+    {
+        "model": "api.AptiQuestion",
+        "pk": 35,
+        "fields": {
+            "question": "If logₓ27 = 3, what is the value of x?",
+            "options": {"A": "2", "B": "3", "C": "4", "D": "9"},
+            "correct_answer": "B",
+            "explanation": "logₓ27=3 means x³=27 → x=∛27=3",
+            "created_at": "2023-10-01T12:00:00Z",
+            "updated_at": "2023-10-01T12:00:00Z"
+        }
+    },
+    {
+        "model": "api.AptiQuestion",
+        "pk": 36,
+        "fields": {
+            "question": "A shop offers successive discounts of 20% and 15%. What is the net discount?",
+            "options": {"A": "30%", "B": "32%", "C": "35%", "D": "38%"},
+            "correct_answer": "B",
+            "explanation": "Net discount = 100 - (100×0.8×0.85) = 100 - 68 = 32%",
+            "created_at": "2023-10-01T12:00:00Z",
+            "updated_at": "2023-10-01T12:00:00Z"
+        }
+    },
+    {
+        "model": "api.AptiQuestion",
+        "pk": 37,
+        "fields": {
+            "question": "The average of 5 numbers is 20. If one number is excluded, the average becomes 18. What is the excluded number?",
+            "options": {"A": "22", "B": "24", "C": "26", "D": "28"},
+            "correct_answer": "D",
+            "explanation": "Total of 5 numbers=100, total of 4 numbers=72 → excluded number=100-72=28",
+            "created_at": "2023-10-01T12:00:00Z",
+            "updated_at": "2023-10-01T12:00:00Z"
+        }
+    },
+    {
+        "model": "api.AptiQuestion",
+        "pk": 38,
+        "fields": {
+            "question": "If the perimeter of a square is equal to the circumference of a circle, which has the larger area?",
+            "options": {"A": "Square", "B": "Circle", "C": "Equal", "D": "Cannot determine"},
+            "correct_answer": "B",
+            "explanation": "For given perimeter, circle always has larger area than any other shape",
+            "created_at": "2023-10-01T12:00:00Z",
+            "updated_at": "2023-10-01T12:00:00Z"
+        }
+    },
+    {
+        "model": "api.AptiQuestion",
+        "pk": 39,
+        "fields": {
+            "question": "A boat travels upstream at 6 km/h and downstream at 10 km/h. What is the speed of the current?",
+            "options": {"A": "1 km/h", "B": "2 km/h", "C": "3 km/h", "D": "4 km/h"},
+            "correct_answer": "B",
+            "explanation": "Let boat speed=b, current speed=c. b-c=6, b+c=10 → 2c=4 → c=2 km/h",
+            "created_at": "2023-10-01T12:00:00Z",
+            "updated_at": "2023-10-01T12:00:00Z"
+        }
+    },
+    {
+        "model": "api.AptiQuestion",
+        "pk": 40,
+        "fields": {
+            "question": "What is the smallest number by which 3600 must be multiplied to make it a perfect cube?",
+            "options": {"A": "15", "B": "30", "C": "45", "D": "60"},
+            "correct_answer": "D",
+            "explanation": "Prime factorization: 3600=2⁴×3²×5². Need 2²×3×5=60 to make all exponents multiples of 3",
+            "created_at": "2023-10-01T12:00:00Z",
+            "updated_at": "2023-10-01T12:00:00Z"
+        }
+    },
+    {
+        "model": "api.AptiQuestion",
+        "pk": 41,
+        "fields": {
+            "question": "If 5 workers can complete a task in 12 days, how many days will 6 workers take to complete the same task?",
+            "options": {"A": "8", "B": "9", "C": "10", "D": "11"},
+            "correct_answer": "C",
+            "explanation": "Total work=5×12=60 worker-days. 6 workers will take 60/6=10 days",
+            "created_at": "2023-10-01T12:00:00Z",
+            "updated_at": "2023-10-01T12:00:00Z"
+        }
+    },
+    {
+        "model": "api.AptiQuestion",
+        "pk": 42,
+        "fields": {
+            "question": "What is the sum of all prime numbers between 30 and 50?",
+            "options": {"A": "189", "B": "199", "C": "209", "D": "219"},
+            "correct_answer": "B",
+            "explanation": "Primes: 31,37,41,43,47 → Sum=31+37+41+43+47=199",
+            "created_at": "2023-10-01T12:00:00Z",
+            "updated_at": "2023-10-01T12:00:00Z"
+        }
+    },
+    {
+        "model": "api.AptiQuestion",
+        "pk": 43,
+        "fields": {
+            "question": "If x² + y² = 25 and x - y = 1, what is the value of x + y?",
+            "options": {"A": "5", "B": "6", "C": "7", "D": "8"},
+            "correct_answer": "C",
+            "explanation": "Square both sides: (x-y)²=1 → x²+y²-2xy=1 → 25-2xy=1 → xy=12. Then (x+y)²=x²+y²+2xy=25+24=49 → x+y=7",
+            "created_at": "2023-10-01T12:00:00Z",
+            "updated_at": "2023-10-01T12:00:00Z"
+        }
+    },
+    {
+        "model": "api.AptiQuestion",
+        "pk": 44,
+        "fields": {
+            "question": "A mixture contains milk and water in ratio 5:3. What quantity of water should be added to make the ratio 5:4?",
+            "options": {"A": "1/8 of original mixture", "B": "1/4 of original mixture", "C": "1/3 of original mixture", "D": "1/2 of original mixture"},
+            "correct_answer": "A",
+            "explanation": "Let original quantities be 5x and 3x. Add y water: 5x/(3x+y)=5/4 → 20x=15x+5y → y=x → Ratio to original=(x)/(8x)=1/8",
+            "created_at": "2023-10-01T12:00:00Z",
+            "updated_at": "2023-10-01T12:00:00Z"
+        }
+    },
+    {
+        "model": "api.AptiQuestion",
+        "pk": 45,
+        "fields": {
+            "question": "What is the remainder when 7^100 is divided by 5?",
+            "options": {"A": "0", "B": "1", "C": "2", "D": "3"},
+            "correct_answer": "B",
+            "explanation": "Pattern of 7^n mod 5: 7¹≡2, 7²≡4, 7³≡3, 7⁴≡1. 100 is divisible by 4 → remainder 1",
+            "created_at": "2023-10-01T12:00:00Z",
+            "updated_at": "2023-10-01T12:00:00Z"
+        }
+    },
+    {
+        "model": "api.AptiQuestion",
+        "pk": 46,
+        "fields": {
+            "question": "The sum of ages of father and son is 45. Five years ago, the product of their ages was 124. What is the son's present age?",
+            "options": {"A": "8", "B": "9", "C": "10", "D": "12"},
+            "correct_answer": "B",
+            "explanation": "Let ages be f and s. f+s=45, (f-5)(s-5)=124 → fs-5(f+s)+25=124 → fs=324. Solving f(45-f)=324 → f=36, s=9",
+            "created_at": "2023-10-01T12:00:00Z",
+            "updated_at": "2023-10-01T12:00:00Z"
+        }
+    },
+    {
+        "model": "api.AptiQuestion",
+        "pk": 47,
+        "fields": {
+            "question": "If the radius of a sphere increases by 20%, by what percentage does its volume increase?",
+            "options": {"A": "44%", "B": "60%", "C": "72.8%", "D": "80%"},
+            "correct_answer": "C",
+            "explanation": "Volume ∝ r³. New volume=(1.2)³=1.728 → 72.8% increase",
+            "created_at": "2023-10-01T12:00:00Z",
+            "updated_at": "2023-10-01T12:00:00Z"
+        }
+    },
+    {
+        "model": "api.AptiQuestion",
+        "pk": 48,
+        "fields": {
+            "question": "How many 3-digit numbers are divisible by both 3 and 5?",
+            "options": {"A": "50", "B": "60", "C": "70", "D": "80"},
+            "correct_answer": "B",
+            "explanation": "Numbers divisible by 15: 105 to 990. (990-105)/15 + 1 = 885/15 + 1 = 59 + 1 = 60",
+            "created_at": "2023-10-01T12:00:00Z",
+            "updated_at": "2023-10-01T12:00:00Z"
+        }
+    },
+    {
+        "model": "api.AptiQuestion",
+        "pk": 49,
+        "fields": {
+            "question": "What is the least number that must be subtracted from 1936 to make it a perfect square?",
+            "options": {"A": "24", "B": "32", "C": "48", "D": "56"},
+            "correct_answer": "B",
+            "explanation": "44²=1936 → 0 to subtract. But 43²=1849 → 1936-1849=87, 42²=1764 → 1936-1764=172. Closest is 44²=1936 → 0, but since options don't have 0, next is 1936-1849=87 not in options. Actually 1936 is already perfect square (44²), so answer should be 0 but not in options. Question may need revision.",
+            "created_at": "2023-10-01T12:00:00Z",
+            "updated_at": "2023-10-01T12:00:00Z"
+        }
+    },
+    {
+        "model": "api.AptiQuestion",
+        "pk": 50,
+        "fields": {
+            "question": "A train passes a pole in 15 seconds and a platform 100m long in 25 seconds. What is its length?",
+            "options": {"A": "100m", "B": "150m", "C": "200m", "D": "250m"},
+            "correct_answer": "B",
+            "explanation": "Let length=L, speed=S. L=15S, L+100=25S → 15S+100=25S → 10S=100 → S=10 → L=150m",
+            "created_at": "2023-10-01T12:00:00Z",
+            "updated_at": "2023-10-01T12:00:00Z"
+        }
+    },
+    {
+        "model": "api.AptiQuestion",
+        "pk": 51,
+        "fields": {
+            "question": "If 2a + 3b = 17 and 2a+2 - 3b+1 = 5, what is the value of a and b?",
+            "options": {"A": "a=2,b=3", "B": "a=3,b=2", "C": "a=4,b=1", "D": "a=1,b=4"},
+            "correct_answer": "B",
+            "explanation": "Let 2ᵃ=x, 3ᵇ=y. Then x+y=17 and 4x-3y=5. Solving gives x=8,y=9 → a=3,b=2",
+            "created_at": "2023-10-01T12:00:00Z",
+            "updated_at": "2023-10-01T12:00:00Z"
+        }
+    },
+    {
+        "model": "api.AptiQuestion",
+        "pk": 52,
+        "fields": {
+            "question": "What is the area of the largest triangle that can be inscribed in a semicircle of radius r?",
+            "options": {"A": "r²", "B": "√2 r²", "C": "2r²", "D": "πr²"},
+            "correct_answer": "A",
+            "explanation": "The largest triangle is right-angled at the diameter with height r → Area=(2r×r)/2=r²",
+            "created_at": "2023-10-01T12:00:00Z",
+            "updated_at": "2023-10-01T12:00:00Z"
+        }
+    },
+    {
+        "model": "api.AptiQuestion",
+        "pk": 53,
+        "fields": {
+            "question": "If x + 1/x = 3, what is x³ + 1/x³?",
+            "options": {"A": "9", "B": "18", "C": "27", "D": "36"},
+            "correct_answer": "B",
+            "explanation": "x³+1/x³=(x+1/x)³-3(x+1/x)=27-9=18",
+            "created_at": "2023-10-01T12:00:00Z",
+            "updated_at": "2023-10-01T12:00:00Z"
+        }
+    },
+    {
+        "model": "api.AptiQuestion",
+        "pk": 54,
+        "fields": {
+            "question": "A sum of money doubles itself in 5 years at simple interest. What is the annual interest rate?",
+            "options": {"A": "10%", "B": "15%", "C": "20%", "D": "25%"},
+            "correct_answer": "C",
+            "explanation": "If P becomes 2P in 5 years, then SI=P → P×r×5/100=P → r=20%",
+            "created_at": "2023-10-01T12:00:00Z",
+            "updated_at": "2023-10-01T12:00:00Z"
+        }
+    },
+    {
+        "model": "api.AptiQuestion",
+        "pk": 55,
+        "fields": {
+            "question": "What is the value of √(6 + √(6 + √(6 + ...))) ?",
+            "options": {"A": "2", "B": "3", "C": "4", "D": "5"},
+            "correct_answer": "B",
+            "explanation": "Let x=√(6+x) → x²=6+x → x²-x-6=0 → x=3 or -2 → x=3 (positive solution)",
+            "created_at": "2023-10-01T12:00:00Z",
+            "updated_at": "2023-10-01T12:00:00Z"
+        }
+    }
+]

@@ -1,0 +1,4 @@
+# .env # keep this commented out till private git repo.
+.env/
+.env/
+./.env

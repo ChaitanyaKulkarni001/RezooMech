@@ -1,0 +1,1038 @@
+[
+    {
+        "model": "api.Question",
+        "fields": {
+            "language": 1,
+            "topic": "Basics",
+            "statement": "Which keyword is used to define a function in Python?",
+            "options": {
+                "A": "define",
+                "B": "function",
+                "C": "def",
+                "D": "func"
+            },
+            "correct_answer": "C",
+            "explanation": "The 'def' keyword is used to define a function in Python."
+        }
+    },
+    {
+        "model": "api.Question",
+        "fields": {
+            "language": 1,
+            "topic": "Data Types",
+            "statement": "What is the output of `type(3.5)` in Python?",
+            "options": {
+                "A": "int",
+                "B": "float",
+                "C": "double",
+                "D": "long"
+            },
+            "correct_answer": "B",
+            "explanation": "In Python, decimal numbers are stored as 'float' data type."
+        }
+    },
+    {
+        "model": "api.Question",
+        "fields": {
+            "language": 1,
+            "topic": "Lists",
+            "statement": "Which method is used to add an element at the end of a list?",
+            "options": {
+                "A": "insert()",
+                "B": "apiend()",
+                "C": "extend()",
+                "D": "add()"
+            },
+            "correct_answer": "B",
+            "explanation": "The 'apiend()' method adds an element at the end of the list."
+        }
+    },
+    {
+        "model": "api.Question",
+        "fields": {
+            "language": 1,
+            "topic": "Loops",
+            "statement": "Which loop is used when the number of iterations is unknown?",
+            "options": {
+                "A": "for loop",
+                "B": "while loop",
+                "C": "do-while loop",
+                "D": "foreach loop"
+            },
+            "correct_answer": "B",
+            "explanation": "A 'while' loop is used when the number of iterations is not known beforehand."
+        }
+    },
+    {
+        "model": "api.Question",
+        "fields": {
+            "language": 1,
+            "topic": "Conditionals",
+            "statement": "Which statement is used to check multiple conditions in Python?",
+            "options": {
+                "A": "switch",
+                "B": "if-elif-else",
+                "C": "if-else",
+                "D": "match-case"
+            },
+            "correct_answer": "B",
+            "explanation": "The 'if-elif-else' statement is used for multiple condition checks in Python."
+        }
+    },
+
+
+
+    
+        {
+            "model": "api.Question",
+            "fields": {
+                "language": 1,
+                "topic": "Variables",
+                "statement": "Which of the following is a valid variable name in Python?",
+                "options": {
+                    "A": "2var",
+                    "B": "_var",
+                    "C": "var-1",
+                    "D": "if"
+                },
+                "correct_answer": "B",
+                "explanation": "Variable names can start with an underscore or a letter but not a number or reserved keywords."
+            }
+        },
+        {
+            "model": "api.Question",
+            "fields": {
+                "language": 1,
+                "topic": "Operators",
+                "statement": "What will be the output of `print(5 // 2)`?",
+                "options": {
+                    "A": "2.5",
+                    "B": "2",
+                    "C": "3",
+                    "D": "2.0"
+                },
+                "correct_answer": "B",
+                "explanation": "The '//' operator performs floor division, returning the largest integer less than or equal to the result."
+            }
+        },
+        {
+            "model": "api.Question",
+            "fields": {
+                "language": 1,
+                "topic": "Strings",
+                "statement": "What will `print('hello' * 2)` output?",
+                "options": {
+                    "A": "'hello hello'",
+                    "B": "'hellohello'",
+                    "C": "hellohello",
+                    "D": "Error"
+                },
+                "correct_answer": "B",
+                "explanation": "Multiplying a string by an integer repeats the string that many times."
+            }
+        },
+        {
+            "model": "api.Question",
+            "fields": {
+                "language": 1,
+                "topic": "Lists",
+                "statement": "Which method removes the last element from a list?",
+                "options": {
+                    "A": "remove()",
+                    "B": "pop()",
+                    "C": "delete()",
+                    "D": "discard()"
+                },
+                "correct_answer": "B",
+                "explanation": "'pop()' removes the last element by default."
+            }
+        },
+        {
+            "model": "api.Question",
+            "fields": {
+                "language": 1,
+                "topic": "Dictionaries",
+                "statement": "How do you access the value of a key in a dictionary?",
+                "options": {
+                    "A": "dict['key']",
+                    "B": "dict.key",
+                    "C": "dict->key",
+                    "D": "dict.get('key')"
+                },
+                "correct_answer": "D",
+                "explanation": "Using 'dict.get()' is safer than 'dict['key']' because it avoids KeyErrors."
+            }
+        },
+        {
+            "model": "api.Question",
+            "fields": {
+                "language": 1,
+                "topic": "Loops",
+                "statement": "Which loop runs at least once regardless of condition?",
+                "options": {
+                    "A": "for loop",
+                    "B": "while loop",
+                    "C": "do-while loop",
+                    "D": "foreach loop"
+                },
+                "correct_answer": "C",
+                "explanation": "Python does not have a 'do-while' loop, but in languages that do, it always runs once."
+            }
+        },
+        {
+            "model": "api.Question",
+            "fields": {
+                "language": 1,
+                "topic": "Functions",
+                "statement": "Which of the following correctly defines a function in Python?",
+                "options": {
+                    "A": "def my_function():",
+                    "B": "function my_function():",
+                    "C": "def my_function[]:",
+                    "D": "define my_function():"
+                },
+                "correct_answer": "A",
+                "explanation": "Functions in Python are defined using the 'def' keyword."
+            }
+        },
+        {
+            "model": "api.Question",
+            "fields": {
+                "language": 1,
+                "topic": "Classes",
+                "statement": "How do you define a class in Python?",
+                "options": {
+                    "A": "class MyClass():",
+                    "B": "MyClass extends class:",
+                    "C": "define class MyClass:",
+                    "D": "MyClass = class()"
+                },
+                "correct_answer": "A",
+                "explanation": "Classes in Python are defined using the 'class' keyword."
+            }
+        },
+        {
+            "model": "api.Question",
+            "fields": {
+                "language": 1,
+                "topic": "File Handling",
+                "statement": "Which mode is used to open a file for writing in Python?",
+                "options": {
+                    "A": "r",
+                    "B": "w",
+                    "C": "rw",
+                    "D": "open"
+                },
+                "correct_answer": "B",
+                "explanation": "The 'w' mode opens a file for writing, creating it if it doesn’t exist."
+            }
+        },
+        {
+            "model": "api.Question",
+            "fields": {
+                "language": 1,
+                "topic": "Exception Handling",
+                "statement": "Which keyword is used to handle exceptions in Python?",
+                "options": {
+                    "A": "error",
+                    "B": "except",
+                    "C": "catch",
+                    "D": "try-except"
+                },
+                "correct_answer": "D",
+                "explanation": "Exceptions in Python are handled using the 'try-except' block."
+            }
+        },
+        {
+            "model": "api.Question",
+            "fields": {
+                "language": 1,
+                "topic": "Recursion",
+                "statement": "What is the base condition in recursion?",
+                "options": {
+                    "A": "Condition to exit recursion",
+                    "B": "Condition to start recursion",
+                    "C": "Condition to loop infinitely",
+                    "D": "None of the above"
+                },
+                "correct_answer": "A",
+                "explanation": "A base condition prevents infinite recursion by defining an exit condition."
+            }
+        },
+        {
+            "model": "api.Question",
+            "fields": {
+                "language": 1,
+                "topic": "Lambda Functions",
+                "statement": "Which keyword is used to create anonymous functions in Python?",
+                "options": {
+                    "A": "lambda",
+                    "B": "def",
+                    "C": "anon",
+                    "D": "func"
+                },
+                "correct_answer": "A",
+                "explanation": "'lambda' is used to create small anonymous functions in Python."
+            }
+        },
+        {
+            "model": "api.Question",
+            "fields": {
+                "language": 1,
+                "topic": "Sets",
+                "statement": "Which of the following is NOT allowed in a Python set?",
+                "options": {
+                    "A": "Duplicate values",
+                    "B": "Unique values",
+                    "C": "Integers",
+                    "D": "Strings"
+                },
+                "correct_answer": "A",
+                "explanation": "Sets do not allow duplicate values."
+            }
+        },
+        {
+            "model": "api.Question",
+            "fields": {
+                "language": 1,
+                "topic": "Modules",
+                "statement": "Which keyword is used to import a module in Python?",
+                "options": {
+                    "A": "import",
+                    "B": "include",
+                    "C": "require",
+                    "D": "module"
+                },
+                "correct_answer": "A",
+                "explanation": "Python uses the 'import' keyword to include external modules."
+            }
+        },
+        
+    {
+        "model": "api.Question",
+        "fields": {
+            "language": 2,
+            "topic": "Syntax",
+            "statement": "Which of the following is a valid way to declare a variable in Java?",
+            "options": {
+                "A": "int num = 10;",
+                "B": "num = 10;",
+                "C": "variable int num = 10;",
+                "D": "int: num = 10;"
+            },
+            "correct_answer": "A",
+            "explanation": "In Java, variables must be declared with a data type, such as 'int num = 10;'."
+        }
+    },
+    {
+        "model": "api.Question",
+        "fields": {
+            "language": 2,
+            "topic": "Data Types",
+            "statement": "Which data type can store the largest numerical value?",
+            "options": {
+                "A": "int",
+                "B": "long",
+                "C": "double",
+                "D": "float"
+            },
+            "correct_answer": "B",
+            "explanation": "'long' can store larger integers than 'int'. For floating-point numbers, 'double' holds more precision."
+        }
+    },
+    {
+        "model": "api.Question",
+        "fields": {
+            "language": 2,
+            "topic": "Operators",
+            "statement": "What will be the output of `System.out.println(5 / 2);`?",
+            "options": {
+                "A": "2.5",
+                "B": "2",
+                "C": "2.0",
+                "D": "Error"
+            },
+            "correct_answer": "B",
+            "explanation": "Since both operands are integers, Java performs integer division, resulting in '2'."
+        }
+    },
+    {
+        "model": "api.Question",
+        "fields": {
+            "language": 2,
+            "topic": "Strings",
+            "statement": "Which method is used to find the length of a string in Java?",
+            "options": {
+                "A": "length()",
+                "B": "size()",
+                "C": "count()",
+                "D": "len()"
+            },
+            "correct_answer": "A",
+            "explanation": "The 'length()' method returns the number of characters in a string."
+        }
+    },
+    {
+        "model": "api.Question",
+        "fields": {
+            "language": 2,
+            "topic": "Loops",
+            "statement": "Which loop is guaranteed to execute at least once?",
+            "options": {
+                "A": "for loop",
+                "B": "while loop",
+                "C": "do-while loop",
+                "D": "foreach loop"
+            },
+            "correct_answer": "C",
+            "explanation": "The 'do-while' loop executes at least once before checking the condition."
+        }
+    },
+    {
+        "model": "api.Question",
+        "fields": {
+            "language": 2,
+            "topic": "Methods",
+            "statement": "Which keyword is used to define a method in Java?",
+            "options": {
+                "A": "def",
+                "B": "function",
+                "C": "method",
+                "D": "void"
+            },
+            "correct_answer": "D",
+            "explanation": "Methods in Java are typically defined using 'void' or a return type."
+        }
+    },
+    {
+        "model": "api.Question",
+        "fields": {
+            "language": 2,
+            "topic": "Classes",
+            "statement": "Which keyword is used to create an object in Java?",
+            "options": {
+                "A": "allocate",
+                "B": "new",
+                "C": "create",
+                "D": "instanceof"
+            },
+            "correct_answer": "B",
+            "explanation": "The 'new' keyword is used to allocate memory for an object."
+        }
+    },
+    {
+        "model": "api.Question",
+        "fields": {
+            "language": 2,
+            "topic": "Inheritance",
+            "statement": "Which keyword is used to inherit a class in Java?",
+            "options": {
+                "A": "inherit",
+                "B": "extends",
+                "C": "implements",
+                "D": "super"
+            },
+            "correct_answer": "B",
+            "explanation": "'extends' is used for class inheritance, while 'implements' is for interfaces."
+        }
+    },
+    {
+        "model": "api.Question",
+        "fields": {
+            "language": 2,
+            "topic": "Interfaces",
+            "statement": "Which keyword is used to implement an interface in Java?",
+            "options": {
+                "A": "extends",
+                "B": "implements",
+                "C": "interface",
+                "D": "abstract"
+            },
+            "correct_answer": "B",
+            "explanation": "'implements' is used for implementing an interface."
+        }
+    },
+    {
+        "model": "api.Question",
+        "fields": {
+            "language": 2,
+            "topic": "Exception Handling",
+            "statement": "Which block must be used with a 'try' block?",
+            "options": {
+                "A": "catch",
+                "B": "finally",
+                "C": "throw",
+                "D": "either A or B"
+            },
+            "correct_answer": "D",
+            "explanation": "A 'try' block must be followed by a 'catch' or 'finally' block."
+        }
+    },
+    {
+        "model": "api.Question",
+        "fields": {
+            "language": 2,
+            "topic": "Polymorphism",
+            "statement": "Which type of polymorphism is achieved by method overloading?",
+            "options": {
+                "A": "Runtime polymorphism",
+                "B": "Compile-time polymorphism",
+                "C": "Dynamic polymorphism",
+                "D": "Interface polymorphism"
+            },
+            "correct_answer": "B",
+            "explanation": "Method overloading is resolved during compilation, making it compile-time polymorphism."
+        }
+    },
+    {
+        "model": "api.Question",
+        "fields": {
+            "language": 2,
+            "topic": "Threads",
+            "statement": "Which method is used to start a thread in Java?",
+            "options": {
+                "A": "run()",
+                "B": "execute()",
+                "C": "start()",
+                "D": "begin()"
+            },
+            "correct_answer": "C",
+            "explanation": "The 'start()' method is used to start a thread in Java."
+        }
+    },
+    {
+        "model": "api.Question",
+        "fields": {
+            "language": 2,
+            "topic": "Collections",
+            "statement": "Which Java collection allows duplicate values?",
+            "options": {
+                "A": "Set",
+                "B": "Map",
+                "C": "List",
+                "D": "TreeSet"
+            },
+            "correct_answer": "C",
+            "explanation": "'List' allows duplicate values, whereas 'Set' does not."
+        }
+    },
+    {
+        "model": "api.Question",
+        "fields": {
+            "language": 2,
+            "topic": "Memory Management",
+            "statement": "Which method is used to request garbage collection in Java?",
+            "options": {
+                "A": "gc()",
+                "B": "garbageCollector()",
+                "C": "System.gc()",
+                "D": "Runtime.gc()"
+            },
+            "correct_answer": "C",
+            "explanation": "'System.gc()' suggests garbage collection, but it is not guaranteed to run immediately."
+        }
+    },
+    {
+        "model": "api.Question",
+        "fields": {
+            "language": 2,
+            "topic": "Access Modifiers",
+            "statement": "Which access modifier allows access within the same package and subclasses?",
+            "options": {
+                "A": "private",
+                "B": "protected",
+                "C": "public",
+                "D": "default"
+            },
+            "correct_answer": "B",
+            "explanation": "'protected' allows access within the same package and subclasses."
+        }
+    },
+    
+    {
+        "model": "api.Question",
+        "fields": {
+            "language": 3,
+            "topic": "Syntax",
+            "statement": "Which of the following is the correct syntax to declare a variable in C?",
+            "options": {
+                "A": "int num = 10;",
+                "B": "num = 10;",
+                "C": "variable int num = 10;",
+                "D": "int: num = 10;"
+            },
+            "correct_answer": "A",
+            "explanation": "In C, variables must be declared with a data type, such as 'int num = 10;'."
+        }
+    },
+    {
+        "model": "api.Question",
+        "fields": {
+            "language": 3,
+            "topic": "Data Types",
+            "statement": "Which data type in C can store the largest integer value?",
+            "options": {
+                "A": "int",
+                "B": "long",
+                "C": "double",
+                "D": "short"
+            },
+            "correct_answer": "B",
+            "explanation": "The 'long' data type can store larger integer values than 'int'."
+        }
+    },
+    {
+        "model": "api.Question",
+        "fields": {
+            "language": 3,
+            "topic": "Operators",
+            "statement": "What will be the output of `printf(\"%d\", 5 / 2);`?",
+            "options": {
+                "A": "2.5",
+                "B": "2",
+                "C": "2.0",
+                "D": "Error"
+            },
+            "correct_answer": "B",
+            "explanation": "Since both operands are integers, C performs integer division, resulting in '2'."
+        }
+    },
+    {
+        "model": "api.Question",
+        "fields": {
+            "language": 3,
+            "topic": "Control Statements",
+            "statement": "Which loop is guaranteed to execute at least once?",
+            "options": {
+                "A": "for loop",
+                "B": "while loop",
+                "C": "do-while loop",
+                "D": "foreach loop"
+            },
+            "correct_answer": "C",
+            "explanation": "The 'do-while' loop executes at least once before checking the condition."
+        }
+    },
+    {
+        "model": "api.Question",
+        "fields": {
+            "language": 3,
+            "topic": "Functions",
+            "statement": "Which keyword is used to define a function in C?",
+            "options": {
+                "A": "def",
+                "B": "function",
+                "C": "void",
+                "D": "return"
+            },
+            "correct_answer": "C",
+            "explanation": "Functions in C are typically defined using 'void' or a return type."
+        }
+    },
+    {
+        "model": "api.Question",
+        "fields": {
+            "language": 3,
+            "topic": "Pointers",
+            "statement": "Which symbol is used to declare a pointer in C?",
+            "options": {
+                "A": "&",
+                "B": "*",
+                "C": "^",
+                "D": "$"
+            },
+            "correct_answer": "B",
+            "explanation": "The '*' symbol is used to declare a pointer in C."
+        }
+    },
+    {
+        "model": "api.Question",
+        "fields": {
+            "language": 3,
+            "topic": "Arrays",
+            "statement": "What is the index of the first element in an array in C?",
+            "options": {
+                "A": "1",
+                "B": "0",
+                "C": "-1",
+                "D": "Depends on the declaration"
+            },
+            "correct_answer": "B",
+            "explanation": "Arrays in C are zero-indexed, meaning the first element has an index of 0."
+        }
+    },
+    {
+        "model": "api.Question",
+        "fields": {
+            "language": 3,
+            "topic": "Strings",
+            "statement": "Which function is used to find the length of a string in C?",
+            "options": {
+                "A": "length()",
+                "B": "strlen()",
+                "C": "size()",
+                "D": "count()"
+            },
+            "correct_answer": "B",
+            "explanation": "The 'strlen()' function returns the number of characters in a string."
+        }
+    },
+    {
+        "model": "api.Question",
+        "fields": {
+            "language": 3,
+            "topic": "Structures",
+            "statement": "Which keyword is used to define a structure in C?",
+            "options": {
+                "A": "class",
+                "B": "struct",
+                "C": "object",
+                "D": "define"
+            },
+            "correct_answer": "B",
+            "explanation": "The 'struct' keyword is used to define a structure in C."
+        }
+    },
+    {
+        "model": "api.Question",
+        "fields": {
+            "language": 3,
+            "topic": "File Handling",
+            "statement": "Which function is used to open a file in C?",
+            "options": {
+                "A": "open()",
+                "B": "fopen()",
+                "C": "fileopen()",
+                "D": "access()"
+            },
+            "correct_answer": "B",
+            "explanation": "'fopen()' is used to open a file in C."
+        }
+    },
+    {
+        "model": "api.Question",
+        "fields": {
+            "language": 3,
+            "topic": "Dynamic Memory Allocation",
+            "statement": "Which function is used to dynamically allocate memory in C?",
+            "options": {
+                "A": "malloc()",
+                "B": "allocate()",
+                "C": "new()",
+                "D": "create()"
+            },
+            "correct_answer": "A",
+            "explanation": "'malloc()' is used to dynamically allocate memory in C."
+        }
+    },
+    {
+        "model": "api.Question",
+        "fields": {
+            "language": 3,
+            "topic": "Preprocessor Directives",
+            "statement": "Which symbol is used to define a macro in C?",
+            "options": {
+                "A": "$",
+                "B": "#",
+                "C": "&",
+                "D": "*"
+            },
+            "correct_answer": "B",
+            "explanation": "The '#' symbol is used to define macros and include files in C."
+        }
+    },
+    {
+        "model": "api.Question",
+        "fields": {
+            "language": 3,
+            "topic": "Bitwise Operators",
+            "statement": "Which bitwise operator is used to set a specific bit to 1?",
+            "options": {
+                "A": "&",
+                "B": "|",
+                "C": "^",
+                "D": "~"
+            },
+            "correct_answer": "B",
+            "explanation": "The '|' (bitwise OR) operator sets specific bits to 1."
+        }
+    },
+    {
+        "model": "api.Question",
+        "fields": {
+            "language": 3,
+            "topic": "Recursion",
+            "statement": "Which of the following statements is true about recursion?",
+            "options": {
+                "A": "Every recursive function must have a base case.",
+                "B": "Recursive functions execute faster than loops.",
+                "C": "Recursion is always better than iteration.",
+                "D": "Recursive functions do not consume stack memory."
+            },
+            "correct_answer": "A",
+            "explanation": "A base case is necessary to stop recursion and prevent infinite function calls."
+        }
+    },
+    {
+        "model": "api.Question",
+        "fields": {
+            "language": 3,
+            "topic": "Memory Management",
+            "statement": "Which function is used to deallocate dynamically allocated memory in C?",
+            "options": {
+                "A": "delete",
+                "B": "free()",
+                "C": "deallocate()",
+                "D": "release()"
+            },
+            "correct_answer": "B",
+            "explanation": "'free()' is used to deallocate dynamically allocated memory."
+        }
+    },
+
+    
+    {
+        "model": "api.Question",
+        "fields": {
+            "language": 4,
+            "topic": "Syntax",
+            "statement": "Which of the following is the correct syntax to declare a variable in C++?",
+            "options": {
+                "A": "variable int num = 10;",
+                "B": "num = 10;",
+                "C": "int num = 10;",
+                "D": "int: num = 10;"
+            },
+            "correct_answer": "C",
+            "explanation": "In C++, variables must be declared with a data type, such as 'int num = 10;'."
+        }
+    },
+    {
+        "model": "api.Question",
+        "fields": {
+            "language": 4,
+            "topic": "Input/Output",
+            "statement": "Which header file is required for input and output operations in C++?",
+            "options": {
+                "A": "<iostream>",
+                "B": "<stdio.h>",
+                "C": "<fstream>",
+                "D": "<input.h>"
+            },
+            "correct_answer": "A",
+            "explanation": "'<iostream>' is required for input and output operations in C++."
+        }
+    },
+    {
+        "model": "api.Question",
+        "fields": {
+            "language": 4,
+            "topic": "Control Statements",
+            "statement": "Which loop in C++ is guaranteed to execute at least once?",
+            "options": {
+                "A": "for loop",
+                "B": "while loop",
+                "C": "do-while loop",
+                "D": "foreach loop"
+            },
+            "correct_answer": "C",
+            "explanation": "The 'do-while' loop executes at least once before checking the condition."
+        }
+    },
+    {
+        "model": "api.Question",
+        "fields": {
+            "language": 4,
+            "topic": "Functions",
+            "statement": "Which keyword is used to define a function in C++?",
+            "options": {
+                "A": "function",
+                "B": "void",
+                "C": "def",
+                "D": "return"
+            },
+            "correct_answer": "B",
+            "explanation": "Functions in C++ are typically defined using 'void' or a return type."
+        }
+    },
+    {
+        "model": "api.Question",
+        "fields": {
+            "language": 4,
+            "topic": "Classes and Objects",
+            "statement": "Which keyword is used to define a class in C++?",
+            "options": {
+                "A": "struct",
+                "B": "class",
+                "C": "object",
+                "D": "define"
+            },
+            "correct_answer": "B",
+            "explanation": "The 'class' keyword is used to define a class in C++."
+        }
+    },
+    {
+        "model": "api.Question",
+        "fields": {
+            "language": 4,
+            "topic": "Constructors",
+            "statement": "What is the purpose of a constructor in C++?",
+            "options": {
+                "A": "To destroy objects",
+                "B": "To initialize objects",
+                "C": "To allocate memory",
+                "D": "To define a class"
+            },
+            "correct_answer": "B",
+            "explanation": "A constructor is used to initialize objects when a class is instantiated."
+        }
+    },
+    {
+        "model": "api.Question",
+        "fields": {
+            "language": 4,
+            "topic": "Inheritance",
+            "statement": "Which type of inheritance is supported in C++?",
+            "options": {
+                "A": "Single",
+                "B": "Multiple",
+                "C": "Multilevel",
+                "D": "All of the above"
+            },
+            "correct_answer": "D",
+            "explanation": "C++ supports single, multiple, and multilevel inheritance."
+        }
+    },
+    {
+        "model": "api.Question",
+        "fields": {
+            "language": 4,
+            "topic": "Polymorphism",
+            "statement": "Which keyword is used to define a virtual function in C++?",
+            "options": {
+                "A": "virtual",
+                "B": "override",
+                "C": "abstract",
+                "D": "function"
+            },
+            "correct_answer": "A",
+            "explanation": "'virtual' is used to define a virtual function for runtime polymorphism."
+        }
+    },
+    {
+        "model": "api.Question",
+        "fields": {
+            "language": 4,
+            "topic": "Pointers",
+            "statement": "Which symbol is used to declare a pointer in C++?",
+            "options": {
+                "A": "&",
+                "B": "*",
+                "C": "^",
+                "D": "$"
+            },
+            "correct_answer": "B",
+            "explanation": "The '*' symbol is used to declare a pointer in C++."
+        }
+    },
+    {
+        "model": "api.Question",
+        "fields": {
+            "language": 4,
+            "topic": "Operator Overloading",
+            "statement": "Which operator can be overloaded in C++?",
+            "options": {
+                "A": "+",
+                "B": "new",
+                "C": "delete",
+                "D": "All of the above"
+            },
+            "correct_answer": "D",
+            "explanation": "C++ allows overloading of operators including '+', 'new', and 'delete'."
+        }
+    },
+    {
+        "model": "api.Question",
+        "fields": {
+            "language": 4,
+            "topic": "Exception Handling",
+            "statement": "Which keyword is used to handle exceptions in C++?",
+            "options": {
+                "A": "throw",
+                "B": "catch",
+                "C": "try",
+                "D": "All of the above"
+            },
+            "correct_answer": "D",
+            "explanation": "Exception handling in C++ uses 'try', 'catch', and 'throw' keywords."
+        }
+    },
+    {
+        "model": "api.Question",
+        "fields": {
+            "language": 4,
+            "topic": "Templates",
+            "statement": "Which keyword is used to define a template in C++?",
+            "options": {
+                "A": "template",
+                "B": "generic",
+                "C": "typename",
+                "D": "define"
+            },
+            "correct_answer": "A",
+            "explanation": "The 'template' keyword is used to define templates in C++."
+        }
+    },
+    {
+        "model": "api.Question",
+        "fields": {
+            "language": 4,
+            "topic": "STL",
+            "statement": "Which of the following is not a part of the C++ Standard Template Library (STL)?",
+            "options": {
+                "A": "vector",
+                "B": "map",
+                "C": "graph",
+                "D": "queue"
+            },
+            "correct_answer": "C",
+            "explanation": "'graph' is not a built-in STL container in C++."
+        }
+    },
+    {
+        "model": "api.Question",
+        "fields": {
+            "language": 4,
+            "topic": "Memory Management",
+            "statement": "Which function is used to deallocate dynamically allocated memory in C++?",
+            "options": {
+                "A": "delete",
+                "B": "free()",
+                "C": "remove()",
+                "D": "clear()"
+            },
+            "correct_answer": "A",
+            "explanation": "'delete' is used to deallocate memory allocated using 'new' in C++."
+        }
+    },
+    {
+        "model": "api.Question",
+        "fields": {
+            "language": 4,
+            "topic": "Lambda Functions",
+            "statement": "Which feature in C++ allows defining anonymous functions inline?",
+            "options": {
+                "A": "Macros",
+                "B": "Lambda functions",
+                "C": "Templates",
+                "D": "Pointers"
+            },
+            "correct_answer": "B",
+            "explanation": "Lambda functions allow defining anonymous functions inline in C++."
+        }
+    }
+
+    
+    
+
+]
